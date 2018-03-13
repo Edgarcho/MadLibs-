@@ -11,8 +11,11 @@
         android:textSize="60sp"
         android:textStyle="bold"
         android:id="@+id/appNameTextView"
-        android:layout_below="@+id/verbEditText"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp" />
 
 
 
@@ -22,40 +25,75 @@
         android:id="@+id/nounEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textAutoCorrect"
         android:hint="Noun"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/verbEditText"
+        android:layout_alignLeft="@+id/adjectiveEditText"
+        android:layout_alignStart="@+id/adjectiveEditText"
+        android:layout_marginBottom="38dp" />
 
     <EditText
         android:id="@+id/personEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/nounEditText"
-        android:layout_alignStart="@+id/nounEditText"
-        android:layout_below="@+id/nounEditText"
-        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textAutoCorrect"
         android:hint="Person in room"
-        />
+        android:layout_above="@+id/nounEditText"
+        android:layout_toLeftOf="@+id/adjectiveEditText"
+        android:layout_toStartOf="@+id/adjectiveEditText"
+        android:layout_marginBottom="21dp" />
 
     <EditText
         android:id="@+id/verbEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="textAutoCorrect"
         android:hint="Verb"
-        android:layout_below="@+id/personEditText"
-        android:layout_alignLeft="@+id/personEditText"
-        android:layout_alignStart="@+id/personEditText" />
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/adjectiveEditText"
+        android:layout_toStartOf="@+id/adjectiveEditText" />
+
+    <EditText
+        android:id="@+id/verb2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoCorrect"
+        android:hint="Verb"
+        android:layout_above="@+id/resultButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <EditText
+        android:id="@+id/noun2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoCorrect"
+        android:hint="Noun"
+        android:layout_above="@+id/verb2EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+
+    <EditText
+        android:id="@+id/adjectiveEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoCorrect"
+        android:hint="Adjective"
+        android:layout_above="@+id/noun2EditText"
+        android:layout_alignLeft="@+id/verb2EditText"
+        android:layout_alignStart="@+id/verb2EditText"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="29dp" />
 
     <Button
         android:id="@+id/resultButton"
